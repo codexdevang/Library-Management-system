@@ -3,6 +3,7 @@
 using namespace std;
 
 class temp{
+   int i;
 
     string id,name,author,search;
     fstream file;
@@ -82,7 +83,7 @@ void temp :: showAll(){
     getline(file,author,'\n');
 
       cout<<"\n\n";
-      cout<<"\t\t Book Id \t\t\t Author's Name<<endl";
+      cout<<"\t\t Book Id \t\t\t Author's Name"<<endl;
 
 
     while(!file.eof()){
@@ -126,4 +127,7 @@ void temp :: extractBook(){
 
     }
     file.close();
+     cout<<" Enter any key to exit";
+    cin>>i;
+
 }
